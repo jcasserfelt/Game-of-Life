@@ -1,6 +1,3 @@
-package GameOfLife;
-
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -32,8 +29,8 @@ public class Cell extends JPanel {
     }
 
     // Copy the damn cell
-    public GameOfLife.Cell copyCell() {
+    public Cell copyCell() {
 
-        return new GameOfLife.Cell(this.alive);
+        return new Cell(this.alive);
     }
 }

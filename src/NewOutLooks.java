@@ -1,10 +1,7 @@
-package GameOfLife;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import GameOfLife.Cell;
 
 
 public class NewOutLooks extends JFrame {
@@ -192,7 +189,7 @@ public class NewOutLooks extends JFrame {
     };
 
     public static void main(String[] args) throws InterruptedException {
-        GameOfLife.NewOutLooks hd = new GameOfLife.NewOutLooks();
+        NewOutLooks hd = new NewOutLooks();
         Thread.sleep(3000);
         hd.killOrSpare();
         Thread.sleep(3000);

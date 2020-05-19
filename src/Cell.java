@@ -7,11 +7,11 @@ public class Cell extends JPanel {
 
     // Constructor
     public Cell(boolean status) {
+
         this.alive = status;
     }
 
-    public Cell(){
-
+    public Cell() {
     }
 
     public boolean isAlive() {
@@ -28,9 +28,8 @@ public class Cell extends JPanel {
         this.setBackground(Color.WHITE);
     }
 
-    // Copy the damn cell
+    // Copy the cell
     public Cell copyCell() {
-
         return new Cell(this.alive);
     }
 }

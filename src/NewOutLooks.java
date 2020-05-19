@@ -10,6 +10,8 @@ public class NewOutLooks extends JFrame {
     JButton knapp2 = new JButton("10");
     JButton knapp3 = new JButton("100");
     JButton knapp4 = new JButton("500");
+    int apa;
+
 
     //JPanel[][] board = new JPanel[SIZE][SIZE];
     JPanel gamePanel = new JPanel();
@@ -29,7 +31,7 @@ public class NewOutLooks extends JFrame {
     }
 
     public void setLayput() {
-        setTitle("Fifteen Puzzle Game");
+        setTitle("Game of Life");
         setSize(600, 600);
         setResizable(true);
         gamePanel.setLayout(new GridLayout(SIZE, SIZE));
@@ -190,11 +192,11 @@ public class NewOutLooks extends JFrame {
 
     public static void main(String[] args) throws InterruptedException {
         NewOutLooks hd = new NewOutLooks();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         hd.killOrSpare();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         for (int i = 0; i < 1000; i++) {
-            Thread.sleep(17);
+            Thread.sleep(30);
             hd.killOrSpare();
         }
     }
